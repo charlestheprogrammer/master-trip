@@ -1,0 +1,154 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customization | MASTER-TRIP</title>
+    <link rel="stylesheet" href="../css/main.css" media="screen">
+    <link rel="stylesheet" href="counters.css">
+    <script src="jquery.js"></script>
+
+    <meta name="apple-itunes-app" content="app-id=1503217420, app-clip-bundle-id=com.madrau.TripRoad.Clip">
+</head>
+<body>
+    <input type="checkbox" name="menu" id="menu" style="display: none;">
+    <label for="menu" class="close menu" style="position: absolute; z-index: 1000; top: 10; right: 10; cursor: pointer;"><img src="../assets/images/close.png" alt="Menu icon" style="height: 25px;"></label>
+    <div class="nav mobile">
+        <div class="element"><a href="/" class="fake"><p>Home</p></a></div>
+        <div class="element"><a href="/features" class="fake"><p>Features</p></a></div>
+        <div class="element active"><p>Customization</p></div>
+        <div class="element"><a href="/documentation" class="fake"><p>Documentation</p></a></div>
+    </div>
+    <div class="body">
+        <nav class="navbar">
+            <a class="title fake" href="/">
+                <img src="../assets/images/icon.png" alt="Icon">
+                <p>MASTER-TRIP</p>
+            </a>
+            <div class="links">
+                <div class="link">
+                    <a href="/features" class="fake"><p>Features</p></a>
+                    <hr>
+                </div>
+                <div class="link active">
+                    <p>Customization</p>
+                    <hr>
+                </div>
+                <div class="link">
+                    <a href="/documentation" class="fake"><p>Documentation</p></a>
+                    <hr>
+                </div>
+            </div>
+            <label for="menu" class="menu mobile"><img src="../assets/images/menu.png" alt="Menu icon" class="menu mobile"></label>
+        </nav>
+    
+        <section class="safearea" style="z-index: 0">
+            <div class="features" style="z-index: 0">
+                <img src="customization.png" alt="Customization" class="customImage">
+                <div style="width: 100%;">
+                    <h1 class="title">Handy Counters</h1>
+                    <p class="subtitle">Handy counters display useful informations on the top of the app and are totally orderable and customizable. You can set up to 6 counters.</p>
+                    <input type="range" class="counterSlider" min="0" max="2" value="0" step="1" oninput="sliderMoved(this);">
+
+                    <div class="content">
+                        <div style="-webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), color-stop(0.65, rgba(0,0,0,1)), to(rgba(1,0,0,0))); mask-image: linear-gradient(to bottom, rgba(0,0,0,1), 65%, rgba(0,0,0,0)); max-width: 50%; width: 100%;">
+                            <img src="countersTemplate.png" alt="" style="width: auto; max-width: 100%; max-height: 400px;">
+                        </div>
+                        <div class="images" id="scrollImages">
+                            <div><img src="speed.png" alt="Speed"></div>
+                            <div><img src="clock.png" alt="Clock"></div>
+                            <div><img src="altitude.png" alt="Altitude"></div>
+                            <div><img src="city.png" alt="City"></div>
+                            <div><img src="compass.png" alt="Compass"></div>
+                            <div><img src="coords.png" alt="Coords"></div>
+                            <div><img src="gps.png" alt="Gps"></div>
+                            <div><img src="battery.png" alt="Battery"></div>
+                            <div><img src="menu.png" alt="Menu"></div>
+                        </div>
+                        <div class="desc" id="scrollText">
+                            <div>
+                                <p><span class="title">Speed</span><br><br>Your current speed. You can switch unit in the settings.</p>
+                            </div>
+                            <div>
+                                <p><span class="title">Clock & Stopwatches</span><br><br>How much time you are tripping. And on the bottom, the clock or another stopwatch.</p>
+                            </div>
+                            <div>
+                                <p><span class="title">Elevation</span><br><br>Your current altitude. You can switch unit in the settings.</p>
+                            </div>
+                            <div>
+                                <p><span class="title">Location</span><br><br>The city and the area you currently are in.</p>
+                            </div>
+                            <div>
+                                <p><span class="title">Compass</span><br><br>Tap the counter to switch between true and magnetic heading.</p>
+                            </div>
+                            <div>
+                                <p><span class="title">Coordinates</span><br><br>Your current GPS coordinates.</p>
+                            </div>
+                            <div>
+                                <p><span class="title">GPS Signal</span><br><br>Quality of GPS signal, and the accuracy of the location.</p>
+                            </div>
+                            <div>
+                                <p><span class="title">Battery</span><br><br>Level and status of the battery.</p>
+                            </div>
+                            <div>
+                                <p><span class="title">Menu button</span><br><br>Tap this button to access the settings of Master-Trip.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1 class="title separation">Buttons</h1>
+                    <p class="subtitle">In portrait or in landscape, you can change the order of buttons.</p>
+
+                    <img src="buttons.png" alt="Buttons" style="position: relative; left: 50%; transform: translateX(-50%); max-width: 70%; max-height: 40vh;">
+
+                    <h1 class="title separation">Themes</h1>
+                    <p class="subtitle">Master-Trip includes 3 different themes. The defaut one is the "Light" theme. It's a good one when you drive by day, or on a well lighted road. The second one is the "Night" theme. It's a simple blue theme that allows you to drive by night without straining your eyes. The last one, the "OLED" theme, is a black theme that uses the OLED screen to save the battery life.</p>
+
+                    <div class="themes">
+                        <div class="theme">
+                            <img src="light.png" alt="Light">
+                            <p>Light theme</p>
+                        </div>
+                        <div class="theme">
+                            <img src="night.png" alt="Light">
+                            <p>Night theme</p>
+                        </div>
+                        <div class="theme">
+                            <img src="oled.png" alt="Light">
+                            <p>Oled theme</p>
+                        </div>
+                    </div>
+                </div>
+                <script src="counters.js"></script>
+            </div>
+        </section>
+    
+        <footer>
+            <div>
+                <div class="left">
+                    <p>MASTER-TRIP</p>
+                    <a href="https://itunes.apple.com/us/app/trip-road/id1503217420?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-lrg.svg) no-repeat;width:135px;height:40px;background-size:contain;padding-bottom:24px; position: relative;" class="fake"></a>
+                </div>
+                <div class="right">
+                    <div class="links">
+                        <ul class="left">
+                            <li><a href="/features" class="fake">Features</a> <hr></li>
+                            <li><a href="/customization" class="fake">Customization</a> <hr></li>
+                            <li><a href="/documentation" class="fake">Documentation</a> <hr></li>
+                            <li><a href="/privacy" class="fake">Privacy</a> <hr></li>
+                        </ul>
+                        <ul class="right">
+                            <li><a href="https://www.linkedin.com/in/maxime-madrau-708b141a6/?originalSubdomain=fr'" class="fake">Linkedin</a> <hr></li>
+                            <li><a href="https://www.instagram.com/maxmad682/'" class="fake">Instagram</a> <hr></li>
+                        </ul>
+                    </div>
+                    <p class="legal">
+                        © 2019-2020, Maxime Madrau, All Rights Reserved <br><br>
+                        All content on this website are the copyrighted works of Maxime MADRAU. This website was made in collaboration with <a href="https://draze.fr" target="_blank">Charles SIMON-MEUNIER</a>. <br><br>
+                        For further informations, just <a href="mailto:maxime@madrau.fr">contact me</a>.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

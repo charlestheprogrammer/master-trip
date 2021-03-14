@@ -1,0 +1,121 @@
+[
+    {
+        "title": "Quick Start",
+        "id": "Start",
+        "chapters":
+        [
+            {
+                "title": "Discovering Interface",
+                "content": "<p>At the center of the screen, there are two counters. The one on the top is the partial counter, and the one on the bottom if the total counter. The total counter will display distance since you started your trip. It's basically the same for the partial counter, but this one can be resetted.<br/>Around the counters (on the left if you are in portrait mode), there are four buttons: Reset, Stop, Start and Reverse. These buttons are explained in next sections.<br/>On the top, you can see some counters. They are the Handy Counters. They are totally customizable to show you informations you find necessary. On iPhone, there are two pages of Handy Counters, so you can swipe to the left or to the right to navigate between them.</p>"
+            },
+            {
+                "title": "Start / Pause a trip",
+                "content": "<p>To start a trip, tap the \"Start\" button next to the counters. Master-Trip will now update the counters by showing the distance you travelled. This button will now be renamed \"Pause\".<br/>To pause the trip, tap the \"Pause\" button. Master-Trip will not update distance or timer until you resume the trip. To warn you the trip is paused, and not for you to forget to resume it, the \"Pause/Start\" button is now red, and a red \"Paused\" message shows up on the middle of the screen.</p>"
+            },            {
+                "title": "Stop a trip",
+                "content": "<p>By stopping the trip, every counter will be resetted. To avoid stopping by tapping the button by mistake, there is a protection on the \"Stop\" button. To stop the trip, keep your finger pressing the \"Stop\" button for 3 seconds. When you press the \"Stop\" button, it will be red. You could release your finger when the button becomes green, and your phone makes a small vibration. If you release your finger before, the trip won't be stopped.</p>"
+            },
+            {
+                "title": "Reset partial counter",
+                "content": "<p>To reset the Partial counter, press the \"Reset\" button. The distance shown on the partial counter is now set to 0.</p>"
+            },
+            {
+                "title": "Reverse mode",
+                "content": "<p>By enabling the Reverse mode, your distance will be updated backwards. It means instead of increasing the distance, it will decrease.<br/>To enable Reverse mode, tap the \"Reverse\" button. The button and the counter distance are now shown in red not for you to forget to disable the Reverse mode.<br/>To disable Reverse mode, tap the \"Reverse\" button again.</p>"
+            },
+            {
+                "title": "Counters presentation",
+                "content": "<p>Handy counters are counters that are shown on the top of the screen. They can show all kinds of informations and are totally customizable to show informations you find necessary.<br/> Here are all counter types:<br/><u>Speed:</u> The Speed counter shows the current speed of the device. Unit can be changed in settings<br/><u>Clock &amp; Stopwatches:</u> The stopwatch shows the time elapsed since the trip is started. It won't be updated if the trip is paused. The clock on the bottom is the real time clock. If you tap the counter, the clock will disappear to show the partial stopwatch instead.<br/><u>Elevation:</u> This counter shows the current elevation returned by GPS and barometer if your device supports it. Unit can be changed in settings.<br/><u>GPS Signal:</u> This counter shows the quality of the GPS signal. On the bottom, there is the accuracy of the position sent by the GPS.<br/><u>Battery:</u> Because using GPS is very battery draining, you can monitor your battery level on this counter.<br/><u>Heading:</u> This counter is a small compass. It shows the current heading. You can switch between magnetic and true heading by tapping the counter<br/><u>Coordinates:</u> On that counter, you can find your current GPS coordinates. The top one is the latitude, the bottom one is the longitude.<br/><u>City:</u> This counter displays the name of the city you are currently in.<br/><u>Menu:</u> This counter (well, that's not really a counter) is the only one you can't remove. By tapping it, you can access the settings of the app.</p>"
+            },
+            {
+                "title": "Adjust distance",
+                "content": "<p>If the distance shown by the app are late or in advance compared to your road-book, you can quickly adjust the distances with the + and - buttons next to the counters.<br/>The + and - buttons on the top will affect the partial distance, and the buttons on the bottom will affect the total distance.<br/>Tapping the + button will add 0.01 km/mi to the counter. Same thing for the - button: it will remove 0.01 km/mi to the counter.<br/>You can keep a button pressed to add or remove a larger distance.</p>"
+            },
+            {
+                "title": "Change distance",
+                "content": "<p>If you need to set a totally different distance, you can do so by keeping one of the counters pressed when the trip is paused. This will open a small window containing a text field. In that text field, you can type the distance you want to set. By tapping the \"Done\" button, this distance will be updated on both the total and partial counters.<br/>To set the total and partial distance independently, draw the window up to show two text fields. In the top one, you can type the distance you want to set for the partial counter, and in the bottom one, the distance for the total counter. Press \"Done\" to update the counters.</p>"
+            }
+        ]
+    },
+    {
+        "title": "Settings",
+        "id": "Settings",
+        "chapters":
+        [
+            {
+                "title": "Open settings",
+                "content": "<p>To open settings, tap the \"Menu\" handy counter. To close it, click on the X button on the top-left corner.</p>"
+            },
+            {
+                "title": "Change units",
+                "content": "<p>Master-Trip supports multiple units. To change the used unit, open settings, and scroll to the \"Units\" section. You can change the unit of speed, altitude and distance by tapping the matching cell. A dropdown menu will shows, you can use it to select the unit you want to use.</p>"
+            },            {
+                "title": "Change measure settings",
+                "content": "<p>You can modify the way Master-Trip measure distances with the \"Measurement\" section. It contains two settings.<br/>The first allows you to decide if the measured distance takes account of the elevation change. I f this setting is set to \"2D\", Master-Trip will measure the distance without using the altitude. If it's set to \"3D\", the elevation change will be used in the distance calculation.<br/></p><center><img src=\"Measurement.png\" width=\"300px\"/></center><br/>The second setting if the \"Factor\". By tapping this setting, you can type the factor you want Master-Trip to take to measure distances. For example: if the factor is set to 2, the distance Master-Trip displays will be 2x the real distance.<p></p>"
+            },
+            {
+                "title": "Customize Handy Counters",
+                "content": "<p>You can add and remove counters, and change the order they appear on the screen. To do so, tap the \"Menu\" counter. The settings open. Tap the \"Handy Counters\" cell. The list of all handy counters will open. You can drag cells to change the order of the Handy Counters. You can set between 2 and 6 counters. Counters on the bottom section are disabled, the ones on the top are the ones that will be displayed on the main screen.</p>"
+            },
+            {
+                "title": "Change buttons order",
+                "content": "<p>You can change the positions of the buttons by reordering them. Open the settings, tap \"Buttons\", and move the cells corresponding to the button you want to move. You can see a preview on the top, it will help you to get an idea of the buttons position while moving them.</p>"
+            },
+            {
+                "title": "Change theme",
+                "content": "<p></p><table><tbody><tr><td style=\"width:33%;\"><img src=\"light.png\" width=\"100%\"/></td><td style=\"width:33%;\"><img src=\"night.png\" width=\"100%\"/></td><td style=\"width:33%;\"><img src=\"oled.png\" width=\"100%\"/></td></tr><tr style=\"text-align: center;\"><td>Light theme (default)</td><td>Night theme</td><td>OLED theme</td></tr></tbody></table><br/>Master-Trip includes three different themes. The defaut one is the \"Light\" theme. It's a good one when you drive by day, or on a well lighted road. The second one is the \"Night\" theme. It's a simple blue theme that allows you to drive by night without straining your eyes. The last one, the \"OLED\" theme, is a black theme that uses the OLED screen of the iPhones X, XS (Max), 11, 11 Pro (Max) to save the battery life.<br/>To switch between themes, open settings, and tap the \"Theme\" cell in the \"Appearance\" section.<p></p>"
+            }
+        ]
+    },
+    {
+        "title": "Recording Tracks",
+        "id": "Tracks",
+        "chapters":
+        [
+            {
+                "title": "How to record tracks of my trips?",
+                "content": "For your tracks to be saved, please ensure the \"Record Tracks\" switch is on in the settings.Tracks are automatically recorded when you start a trip. When you stop your trip, the recording will end, and the track will be saved."
+            },
+            {
+                "title": "How to share/export tracks?",
+                "content": "Open the settings, and tap the \"Manager\" cell in the \"Tracks\" section. A list of all saved tracks will open, with a small preview of them. Find the one you want to share/export, and slide it to the right. A \"Share\" button will appear. Tap it. Then choose the way you want to export your track."
+            },            {
+                "title": "How to remove tracks?",
+                "content": "Open the settings, and tap the \"Manager\" cell in the \"Tracks\" section. A list of all saved tracks will open, with a small preview of them. Find the one you want to delete, and slide it to the right. A \"Delete\" button will appear. Tap it, and confirm."
+            },
+            {
+                "title": "Viewing tracks",
+                "content": "Open the settings, and tap the \"Manager\" cell in the \"Tracks\" section. A list of all saved tracks will open, with a small preview of them. Find the one you want to watch, and tap it. A map will appear, showing you the track."
+            },
+            {
+                "title": "Viewing tracks on another device (such as a Laptop)",
+                "content": "Thanks to the embedded web server, you will be able to watch your track on another device (a computer for example) on the same local network than your iPhone. Please ensure you are connected to a Wi-Fi network.<br/>Open the settings, and tap the \"Web Server\" cell in the \"Tracks\" section. Tap \"Start server\". You will see an address starting with \"http://\".<br/>On your computer (or the device you want to use to watch your tracks), open a web browser (Chrome, Firefox, Safari, Edge, ...) and in the search bar, type the address shown on your iPhone. A list of the saved tracks will appear. Choose the one you want to watch, and click on it. Your track will appear as a map, and informations next to it. You can drag the red pin across the track to see informations for a specific point (speed, elevation, stopwatches,...).<br/>When you finished, tap \"Stop Server\" on your iPhone."
+            }
+        ]
+    },    {
+        "title": "Triggers & Flic",
+        "id": "Triggers",
+        "chapters":
+        [
+            {
+                "title": "How to use Master-Trip in Shortcuts app?",
+                "content": "<p>Master-Trip includes some URL Schemes. It means you can control Master-Trip in the Apple Shortcuts app thanks to the \"Open URL\" action.<br/> Here are the available actions and their URL:</p><ul><li><u>Start/Pause:</u> mastertrip://startpause</li><li><u>Start:</u> mastertrip://start</li><li><u>Pause:</u> mastertrip://pause</li><li><u>Reverse:</u> mastertrip://reverse</li><li><u>Reset:</u> mastertrip://reset</li><li><u>Change Handy Counters page:</u> mastertrip://switchpage</li></ul><p></p>"
+            },
+            {
+                "title": "What is Flic Button?",
+                "content": "<p>Flic is a wireless physical button that sticks to any surface and can trigger functions on your smartphone. It can be used to control Master-Trip just by pressing it. You can assign several actions (starting a trip, toggle reverse mode, reset partial counter,...) to different press modes (single click, double click or press &amp; hold). Flic can be stick on the driving wheel or next to your seat so you can easily press it without getting distracted.<br/>More infos on <a href=\"https://flic.io\">flic.io</a></p>"
+            },            {
+                "title": "Pairing Flic",
+                "content": "<p>If your Flic was paired to another device before, please be sure to remove it from the app and \"forget\" in the Bluetooth settings on the old-paired device.<br/><br/>Please read the following before proceeding.<br/>To pair Flic with Master-Trip, go to the settings, and tap the \"Triggers\" cell. You are now in the Triggers settings. You could here configure your Flic buttons. Tap \"Add Flic Button\". An dialog-box will appear on your screen giving you informations. Bring your Flic near your device, and keep it pressed for about 6-7 seconds. The dialog box on your device will now show \"Button found!\". <b>Don't release the button yet!</b> If a Bluetooth pairing request shows up, tap \"Pair\". Your device will then show the Flic configuration settings.</p>"
+            },
+            {
+                "title": "Configure Flic button",
+                "content": "<p>If you haven't paired your Flic with your device, please read the \"Pairing Flic\" section before.<br/><br/>To configure your Flic, open the Master-Trip settings, and tap \"Triggers\". Select the Flic Button you want to configure to open it's settings.<br/>By tapping the first cell \"Name\", you could change the Flic's name.<br/>The \"Actions\" section will allow you to choose what you want your Flic to do on Master-Trip. There are 3 triggers: Click, Double-click and Hold. The \"Click\" action is triggered when you press your Flic once. The Double-Click action is triggered when you double-click your Flic. The Hold action is triggered when you keep your Flic pressed for half a second. To choose an action, tap the trigger and select the action you want for that trigger.<br/><br/>Note: If you set Double-Click and/or Hold-Click, your Single-Click action will take more time to be executed because the Flic button would need to wait to be sure you don't press the button again.</p>"
+            },
+            {
+                "title": "Remove Flic",
+                "content": "<p>You can unpair a Flic in its settings, by tapping the \"Remove\" button. The Flic will be unpaired from Master-Trip, but will still be paired to your device (to other applications for example). To unpair the Flic from your device, go to the Settings app, Bluetooth, find your Flic button (generally named \"Flic\" followed by letters and digits), tap the blue \"i\" button, then tap \"Forget this device\"</p>"
+            }
+        ]
+    }
+]

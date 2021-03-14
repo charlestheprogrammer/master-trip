@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASTER-TRIP | Your flight companion</title>
+    <link rel="stylesheet" href="css/main.css" media="screen">
+    <script src="mainScreenRotation.js"></script>
+    <link rel="stylesheet" href="segmentedcontrols.css">
+    <link rel="stylesheet" href="rotations.css">
+
+    
+    <meta name="apple-itunes-app" content="app-id=1503217420, app-clip-bundle-id=com.madrau.TripRoad.Clip">
+	<meta name="description" content="The most precise and complete trip master on iOS">
+</head>
+<body>
+    <input type="checkbox" name="menu" id="menu" style="display: none;">
+    <label for="menu" class="close menu" style="position: absolute; z-index: 1000; top: 10; right: 10; cursor: pointer;"><img src="assets/images/close.png" alt="Menu icon" style="height: 25px;"></label>
+    <div class="nav mobile">
+        <div class="element active"><p>Home</p></div>
+        <div class="element"><a href="/features" class="fake"><p>Features</p></a></div>
+        <div class="element"><a href="/customization" class="fake"><p>Customization</p></a></div>
+        <div class="element"><a href="/documentation" class="fake"><p>Documentation</p></a></div>
+    </div>
+    <div class="body">
+        <nav class="navbar">
+            <a class="title fake" href="/">
+                <img src="../assets/images/icon.png" alt="Icon">
+                <p>MASTER-TRIP</p>
+            </a>
+            <div class="links">
+                <div class="link">
+                    <a href="/features" class="fake"><p>Features</p></a>
+                    <hr>
+                </div>
+                <div class="link">
+                    <a href="/customization" class="fake"><p>Customization</p></a>
+                    <hr>
+                </div>
+                <div class="link">
+                    <a href="/documentation" class="fake"><p>Documentation</p></a>
+                    <hr>
+                </div>
+            </div>
+            <label for="menu" class="menu mobile"><img src="../assets/images/menu.png" alt="Menu icon" class="menu mobile"></label>
+        </nav>
+    
+        <section class="safearea">
+            <div class="fullsection">
+                <div class="left">
+                    <h1 class="mobile">Discover your ideal flight companion</h1>
+                    <div class="rotationDiv">
+                        <div class="flight-types">
+                            <input type="radio" name="flight-type" value="portrait" id="portrait" checked />
+                            <label for="portrait" onclick="landscape();">
+                                Portrait
+                            </label>
+                            <input type="radio" name="flight-type" value="landscape" id="landscape" />
+                            <label for="landscape" onclick="portrait()">
+                                Landscape
+                            </label>
+        
+                        </div>
+        
+                        <img id="mainScreen" src="portrait.png">
+
+                        <style>
+                            #mainScreen {
+                                width: 35%; 
+                                position: relative; 
+                                left: 50%; 
+                                transform: translateX(-50%);
+                            }
+                        </style>
+                    </div>
+                </div>
+                <div class="right">
+                    <h1 class="title">Discover your ideal flight companion</h1>
+                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae vestibulum neque. Aliquam maximus accumsan diam, eget pharetra sem convallis eu. Suspendisse eu lobortis velit, nec fermentum nisl. Phasellus nec iaculis est, ac fermentum erat. Sed sit amet egestas quam. Maecenas nec neque vitae nunc ornare eleifend. Duis vel ex et velit convallis pulvinar. Quisque massa ante, malesuada sit amet orci eget, malesuada maximus nibh. <br><br>
+                    Duis eu ante et turpis laoreet tristique ut eget neque. Pellentesque et placerat diam. Maecenas et tortor rutrum, vulputate nulla vel, pharetra lacus. Nulla dolor arcu, gravida quis porttitor ut, feugiat ut turpis. Donec et metus nec nunc tempor rhoncus. Maecenas vitae metus leo. Donec eu ante nec arcu convallis euismod. Donec pellentesque a ligula eleifend venenatis.
+                    </p>
+                    <p class="small">* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae vestibulum neque. Aliquam maximus accumsan diam, eget pharetra sem convallis eu.</p>
+                </div>
+            </div>
+
+            <hr class="mobile">
+
+            <div class="desc">
+                <h1 class="title">The most precise, complete and customisable trip master on iOS</h1>
+                <p>
+                You can set up to 6 handy counters, that will display useful informations such as Speed, Altitude, Clock, Heading (true and magnetic), Longitude & Latitude, Current city, GPS Signal status and your Battery status. And if you don't like the default counters fonts, you can choose among 6 different fonts. <br><br>
+                You can record your full tracks in order to allow you to share your trips with your friends, or watch them later on a computer via the build-in web server.
+                Going for a night trip? You can switch interface colours between a light theme, a night theme and an OLED theme that will save your battery life. <br><br>
+                With Flic buttons, you can control Master-Trip by the press of a physical button. You can set up to 7 actions for 3 different triggers.
+                If you have an Apple Watch, the Watch companion app will allow you to check all counters and to pause/resume directly on your wrist.
+                </p>
+            </div>
+        </section>
+    
+        <footer>
+            <div>
+                <div class="left">
+                    <p>MASTER-TRIP</p>
+                    <a href="https://itunes.apple.com/us/app/trip-road/id1503217420?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-lrg.svg) no-repeat;width:135px;height:40px;background-size:contain;padding-bottom:24px; position: relative;" class="fake"></a>
+                </div>
+                <div class="right">
+                    <div class="links">
+                        <ul class="left">
+                            <li><a href="/features" class="fake">Features</a> <hr></li>
+                            <li><a href="/customization" class="fake">Customization</a> <hr></li>
+                            <li><a href="/documentation" class="fake">Documentation</a> <hr></li>
+                            <li><a href="/privacy" class="fake">Privacy</a> <hr></li>
+                        </ul>
+                        <ul class="right">
+                            <li><a href="https://www.linkedin.com/in/maxime-madrau-708b141a6/?originalSubdomain=fr'" class="fake">Linkedin</a> <hr></li>
+                            <li><a href="https://www.instagram.com/maxmad682/'" class="fake">Instagram</a> <hr></li>
+                        </ul>
+                    </div>
+                    <p class="legal">
+                        © 2019-2020, Maxime Madrau, All Rights Reserved <br><br>
+                        All content on this website are the copyrighted works of Maxime MADRAU. This website was made in collaboration with <a href="https://draze.fr" target="_blank">Charles SIMON-MEUNIER</a>. <br><br>
+                        For further informations, just <a href="mailto:maxime@madrau.fr">contact me</a>.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
